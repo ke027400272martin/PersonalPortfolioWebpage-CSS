@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.project-tile {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        text-align: center;
+    }
+
+    .project-tile {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 5px; /* Reduce padding */
+    }
+}
+
+Explanation
+HTML Structure:
+The HTML is organized into sections for easy navigation.
+Each project is represented by a .project-tile div, making it easy to style and manage.
+Links are provided for navigation and project viewing.
+CSS Styles:
+Basic styles are applied for layout and aesthetics.
+A media query adjusts styles when the screen width is less than or equal to 600 pixels, ensuring the design remains user-friendly on mobile devices.
+Conclusion
+This setup provides a solid foundation for your personal portfolio webpage. You can expand upon this by adding more projects, customizing styles, or incorporating additional features like a contact form or social media links. Happy coding!
+separate HTML and CSS
+Sources
+Answer
+To separate HTML and CSS effectively, you can follow a straightforward process that enhances code organization, readability, and maintainability. Here’s how to do it:
+Steps to Separate HTML and CSS
+Create Your HTML File:
+Start by writing your HTML code in a file named index.html (or any name you prefer). This file will contain the structure of your webpage.
+xml
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#welcome-section">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="welcome-section">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my projects and skills.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Project tiles go here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <!-- Contact information goes here -->
+    </section>
+</body>
+</html>
+
+Create Your CSS File:
+Next, create a separate file named styles.css. This file will contain all your styling rules.
+css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        text-align: center;
+    }
+}
+
+Link the CSS File to the HTML:
+In the <head> section of your HTML file, use the <link> tag to connect your CSS file. This tells the browser to apply the styles defined in styles.css to the HTML content.
+Benefits of Separating HTML and CSS
+Improved Code Organization: Keeping HTML and CSS in separate files allows for a clearer structure, making it easier to navigate and manage your codebase4.
+Enhanced Readability: Developers can quickly locate specific sections of code without sifting through mixed content4.
+Reusability: Styles defined in a single CSS file can be reused across multiple HTML files, promoting consistency and reducing redundancy45.
+Simplified Maintenance: When updates are needed, changes can be made in one place (the CSS file) rather than in multiple HTML files4.
+Conclusion
+Separating HTML and CSS is a best practice in web development that leads to better organization and maintainability of your code. By following these steps, you can create a more efficient workflow for building and managing your web projects.
+Related
+What are the benefits of separating HTML and CSS files
+How can I organize multiple CSS files for a large project
+Should I use a single CSS file or multiple files for a small website
+How does separating CSS files affect page load times
+What are some common pitfalls when separating HTML and CSS
+
+Intro to Web Development - 16 - Separate CSS Files - YouTube
+Intro to Web Development - 16 - Separate CSS Files - YouTube
+Watch
+
